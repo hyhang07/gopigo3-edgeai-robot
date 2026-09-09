@@ -21,8 +21,9 @@ CARRY_ANGLE       = 130
 SAFE_STOP_DIST_MM = 150
 AUTOPILOT_STOP_MM = 120
 MAX_RPM           = 800
-MODEL_PATH        = "best_float16.tflite"
-INPUT_SIZE        = 640
+BASE_DIR          = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_IN_MODELS   = os.path.join(BASE_DIR, "models", "best_float16V2.tflite")
+MODEL_PATH        = MODEL_IN_MODELS if os.path.exists(MODEL_IN_MODELS) else "best_float16.tflite"INPUT_SIZE        = 640
 CAM_W, CAM_H      = 480, 360
 CAM_FPS           = 24
 CONF_THRESHOLD    = 0.20
@@ -978,7 +979,7 @@ if __name__ == '__main__':
         t.start()
 
     print("🚀 GUNDAM 5.1 AI Edition Started!")
-    print("👉 Access web UI via: http://10.10.10.10:5003")
+    print("👉 Access web UI via: http://<YOUR_PI_IP>:5003 (e.g. http://10.10.10.10:5003)")
     print("⚡ Full Web Control Mode — No terminal keyboard dependency")
     print("🎉 'M' Key / Web Button = Victory Celebration Macro")
     print("🛑 Press Ctrl+C to safely terminate")
