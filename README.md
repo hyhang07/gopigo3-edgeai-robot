@@ -79,11 +79,11 @@ The robot decouples UI serving, sensor acquisition, inference, motion control, a
 
 The browser client is crafted with an embedded HUD aesthetic using Google Fonts (*Orbitron* and *Share Tech Mono*) and dynamic scanline styling:
 
-```
+
 <p align="center">
   <img src="assets/hud_dashboard.png" width="80%" alt="Web Teleoperation HUD">
 </p>
-```
+
 
 ### Teleoperation Keybindings
 
@@ -129,11 +129,11 @@ yolo export model=runs/detect/train/weights/best.pt format=tflite imgsz=640 half
 
 ## 🔄 Human-AI Collaborative Workflow
 
-```
+
 <p align="center">
   <img src="assets/workflow.png" width="80%" alt="Human-AI Workflow">
 </p>
-```
+
 
 ---
 
