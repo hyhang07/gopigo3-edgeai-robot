@@ -1,0 +1,6 @@
+Flask>=2.0.0
+numpy>=1.21.0
+opencv-python-headless>=4.5.0
+picamera>=1.13
+easygopigo3
+tflite-runtime>=2.5.0
