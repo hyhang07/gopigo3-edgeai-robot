@@ -79,24 +79,10 @@ The robot decouples UI serving, sensor acquisition, inference, motion control, a
 
 The browser client is crafted with an embedded HUD aesthetic using Google Fonts (*Orbitron* and *Share Tech Mono*) and dynamic scanline styling:
 
-```text
-+-----------------------------------------------------------+
-|                    ◈ GUNDAM 5.1 AI ◈                      |
-| +-------------------------------------------------------+ |
-| |                  [ Live Camera Feed ]                 | |
-| |                         +--+                          | |
-| |                         |  | front_ring 0.91          | |
-| |                        --+--                          | |
-| +-------------------------------------------------------+ |
-|  [DIST: 525mm] [SPEED: 300] [TARGET: front_ring] [FPS: 0.8]  |
-|  [G1: 100]       [G2: 300]       [G3: 600]      [G4: 800]  |
-|                    [ ▲ ]                                  |
-|            [ ◀ ]  [STOP]  [ ▶ ]                            |
-|                    [ ▼ ]                                  |
-|  [🛑 E-STOP]   [🤖 AUTOPILOT]   [🎯 GRAB]   [🛡 BRAKE ON]  |
-|  [                     🎉 VICTORY                       ]  |
-|  ARM Z-AXIS SLIDER: [=======O===========] 90°             |
-+-----------------------------------------------------------+
+```
+<p align="center">
+  <img src="assets/hud_dashboard.png" width="80%" alt="Web Teleoperation HUD">
+</p>
 ```
 
 ### Teleoperation Keybindings
@@ -143,45 +129,10 @@ yolo export model=runs/detect/train/weights/best.pt format=tflite imgsz=640 half
 
 ## 🔄 Human-AI Collaborative Workflow
 
-```text
-[ PHASE 1: Conceptualization ]
-   (Human) Analyze operational criteria & mechanical constraints
-      |
-      v
-   (Gemini) System feasibility analysis & architecture planning
-      |
-[ PHASE 2: Hardware & Sensor Profiling ]
-   (Human) Hardware testing on Pi 4 -> camera blur & I2C latency
-      |
-      v
-   (Gemini) V4L2 optimization & focal plane calibration
-      |
-[ PHASE 3: Custom Vision Model Pipeline ]
-   (Human) GoPiGo camera collection & LabelImg annotation (1500+ labels)
-      |
-      v
-   (Gemini) Data split & class balancing routines
-      |
-      v
-   (Human) Local GPU training (RTX 4060) -> FP16 TFLite conversion
-      |
-[ PHASE 4: Concurrency Refactoring (Multi-Agent Relay) ]
-   (Human) Monolithic script facing I2C bus locks & video drops
-      |
-      v
-   (Gemini) Concurrency model definition & strict lock hierarchy prompt
-      |
-      v
-   (Claude) Generates 6-thread decoupled architecture framework
-      |
-[ PHASE 5: Deployment & Tuning ]
-   (Human) Physical deployment on robot & latency tuning
-      |
-      v
-   (Gemini) Edge tensor dimension fixes & hardware mutex scope tuning
-      |
-      v
-   (Human) Production run & automated mission completion
+```
+<p align="center">
+  <img src="assets/workflow.png" width="80%" alt="Human-AI Workflow">
+</p>
 ```
 
 ---
