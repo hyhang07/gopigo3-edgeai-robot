@@ -219,11 +219,24 @@ http://<YOUR_PI_IP_ADDRESS>:5003
 
 ---
 
-## 👥 Contributors
+## 👨‍💻 Author & Technical Lead
 
-- **Hong Yee Hang** ([@hyhang07](https://github.com/hyhang07)) - Concurrency Architecture, Control Systems & Deployment
-- **Tan Zong Ting** - Edge AI Training (YOLOv8), Quantization & Vision Pipeline
-- **Louis Cha Hao Le** - Mechanical Fabrication, Hardware Integration & Web HUD
+**Hong Yee Hang ([@hyhang07](https://github.com/hyhang07))**  
+*Sole Developer & Robotics Systems Engineer*
+
+Responsible for the entire technical implementation and lifecycle:
+- **System Architecture**: Designed and implemented the 6-thread concurrent decoupling framework, mutex lock hierarchy, and 50Hz non-blocking motion loop.
+- **Edge Vision Pipeline**: Handled dataset collection, LabelImg annotation, local RTX 4060 GPU training (YOLOv8), and TFLite FP16 quantization.
+- **Web & Teleoperation**: Built the zero-dependency military HUD, real-time MJPEG video stream with dynamic OpenCV overlay, and asynchronous REST APIs.
+- **Embedded & Mechanical**: Hardware integration on Raspberry Pi 4 + GoPiGo3, V4L2 camera driver tuning, ultrasonic virtual bumper, and physical Z-axis arm fabrication.
+- **AI-Assisted Engineering**: Orchestrated the multi-agent LLM relay (Gemini $\leftrightarrow$ Claude) for architectural refactoring and I2C race-condition debugging.
+
+---
+
+## 🤝 Coursework Acknowledgments
+
+This project originated as a university group project at **Universiti Tunku Abdul Rahman (UTAR)**.
+- **Tan Zong Ting** & **Louis Cha Hao Le** — Contributed to academic report documentation, rubric alignment, and presentation preparation.
 
 ---
 
