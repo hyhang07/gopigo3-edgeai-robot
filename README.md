@@ -149,8 +149,8 @@ yolo export model=runs/detect/train/weights/best.pt format=tflite imgsz=640 half
 Clone the repository and install dependencies on your Raspberry Pi:
 
 ```bash
-git clone https://github.com/hyhang07/gundam-edgeai-teleop.git
-cd gundam-edgeai-teleop
+git clone https://github.com/hyhang07/gopigo3-edgeai-robot.git
+cd gopigo3-edgeai-robot
 
 # Install Python dependencies
 pip3 install -r requirements.txt
