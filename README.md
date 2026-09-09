@@ -231,12 +231,7 @@ Responsible for the entire technical implementation and lifecycle:
 - **Embedded & Mechanical**: Hardware integration on Raspberry Pi 4 + GoPiGo3, V4L2 camera driver tuning, ultrasonic virtual bumper, and physical Z-axis arm fabrication.
 - **AI-Assisted Engineering**: Orchestrated the multi-agent LLM relay (Gemini $\leftrightarrow$ Claude) for architectural refactoring and I2C race-condition debugging.
 
----
 
-## 🤝 Coursework Acknowledgments
-
-This project originated as a university group project at **Universiti Tunku Abdul Rahman (UTAR)**.
-- **Tan Zong Ting** & **Louis Cha Hao Le** — Contributed to academic report documentation, rubric alignment, and presentation preparation.
 
 ---
 
