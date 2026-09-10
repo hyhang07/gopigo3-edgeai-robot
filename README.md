@@ -157,7 +157,7 @@ pip3 install -r requirements.txt
 ```
 
 ### 3. Execution
-Ensure your model file (`best_float16.tflite`) is placed in the project root:
+Ensure your model file (`best_float16V2.tflite`) is placed in the project root:
 
 ```bash
 python3 src/app.py
